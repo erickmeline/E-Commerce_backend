@@ -6,7 +6,10 @@ const { Tag, Product, ProductTag } = require('../../models');
 router.get('/', (req, res) => {
   Tag.findAll({
     include: [
-      Product
+      {
+        model: Product,
+        through: ProductTag
+      }
     ]
   }).then((response) => {
     res.status(200).json(response);
@@ -19,7 +22,10 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     },
     include: [
-      Product
+      {
+        model: Product,
+        through: ProductTag
+      }
     ]
   });
 });

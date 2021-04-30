@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     ]
   }).then((response) => {
     res.status(200).json(response);
-  })
+  });
 });
 
 // get one product
@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
     include: [
       Category, Tag
     ]
-  })
+  });
 });
 
 // create new product

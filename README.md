@@ -26,7 +26,7 @@ node server.js
 
 ## Video Walkthrough
 
-https://erickmeline.github.io/Employee-Tracker/
+https://erickmeline.github.io/E-Commerce_backend/
 
 ## Screenshot
 
